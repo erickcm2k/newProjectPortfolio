@@ -1,0 +1,103 @@
+$main-color: rgb(162, 113, 113);
+$greyish-color: rgb(205,205,205);
+$orange-color: #FF5733;
+$p-font: 'Jost', sans-serif;
+$title-font: 'Josefin Sans', sans-serif;
+
+.html {
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    display: inherit;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.header {
+    background-color: $greyish-color;
+    font-family: $p-font;
+    display: flex;
+   
+    
+    .my-logo {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    li {
+        display: inline;
+        padding-right: 20px;
+        color: $main-color;
+        // padding-left: 5px;
+        :hover {
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 4);
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.hero {
+    background-color: $main-color;
+    border: 4px solid red;
+    font-family: $p-font;
+
+    h2 {
+        font-family: $title-font;
+    }
+
+}
+
+
+.portfolio {
+    background-color: $greyish-color;
+    border: 4px solid red;
+    font-family: $p-font;
+
+}
+
+.education {
+    border: 4px solid red;
+    font-family: $p-font;
+
+}
+
+.about-me {
+    border: 4px solid red;
+    font-family: $p-font;
+
+}
+
+.teaching {
+    background-color: red;
+    border: 4px solid red;
+    font-family: $p-font;
+
+}
+
+.contact {
+    background-color: $greyish-color;
+    border: 4px solid red;
+    font-family: $p-font;
+
+}
+
+
+.footer {
+    font-family: $p-font;
+
+    background-color: $orange-color;
+    height: 100px;
+
+    .designedby {
+        background-color: red;
+        height: 20px;
+    }
+}
