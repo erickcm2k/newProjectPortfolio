@@ -1,104 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>erick.io</title>
 
+    <title>Erick Castañeda</title>
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
-            <img class="my-logo" src="./assets/images/e-logo.jpeg">
-            <nav class="sections-menu">
-                <ol>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark bg-dark fixed-top">
 
-                    <li>
-                        <a class="link" href="#portfolio">Portfolio</a>
-                    </li>
-
-                    <li>
-                        <a class="link" href="#education">Education</a>
-                    </li>
-
-                    <li>
-                        <a class="link" href="#about-me">About Me</a>
-                    </li>
-
-                    <li> 
-                        <a class="link" href="#teaching">Teaching</a>        
-                    </li>
-
-                    <li> 
-                        <a class="link" href="#contact">Contact</a>        
-                    </li>
-                </ol>
-            </nav>
+        <a class="navbar-brand" href="#">Erick Castañeda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!-- About me & projects -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item text-white">
+                <a class="nav-link" href="#about-me">About Me</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#learning">Learning</a>
+            </li>
+        </ul>
+        <!-- Contact section -->
+        <ul class=" navbar-nav navbar-right">
+                <li class="nav-item">
+                  <a class="nav-link" href="">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Contact Me</a>
+                </li>
+        </ul>        
         </div>
-    </header>
+      </nav>
 
-    <section class="hero">
-        <div class="container">
-            <div>
-                <h2>Soy el hero</h2>
-            </div>
-        </div>
+    <div class="container">
+        <div class="jumbotron shadow" id="about-me">
+            <h1 class="display-4">Hi! I'm<strong> Erick Castañeda</strong></h1>
+            <p class="lead">I'm a Computer Engineering student.</p>
 
-    </section>
-
-    <section class="portfolio">
-        <div class="container">
-            <div>
-                <h2>soy el portfolio</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="education">
-        <div class="container">
-            <div>
-                <h2>soy education</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-me">
-        <div class="container">
-            <div>
-                <h2>soy about-me</h2>
-            </div>
-        </div>
-    </section>
-    
-    <section class="teaching">
-        <div class="container">
-            <div>
-                <h2>soy teaching</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="container">
-            Visit my resume for more details [resume-URL]
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div>
-                <p>Portafolio personal</p>
-            </div>
             
-            <div class="designedby">
-                <p>Designed with &#x2764 by me. </p> 
-            </div> 
-        </div>
-    </footer>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">                        
+                        <img src="./assets/images/perfil2.jpg" class="img-fluid rounded mx-auto d-block shadow" alt="...">                    
+                    </div>
+                    <p class="col-md-6 col-sm-12">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            
+            
+            <hr class="my-4">
+            <p>See more about my work</p>
+            
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://github.com/erickcm2k" target="_blank"><i class="fab fa-github fa-3x px-md-1"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/erickcastanedamartinez/" target="_blank"><i class="fab fa-linkedin-in fa-3x px-md-1"></i></a></li>
+                <li class="list-inline-item"><a href="https://telegram.me/erickcm2k" target="_blank"><i class="fab fa-telegram fa-3x px-md-1"></i></a></li>
+            </ul>
+          </div>
+
+          <h1 class="display-5" id="projects">Projects</h1>
+          <!-- Project Grid -->
+          <div class="row pt-3">
+              <div class="col-md-4 col-sm-12">
+                <div class="card shadow">
+                    <img src="./assets/images/biblioteca.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Library Manager</h5>
+                      <p class="card-text">Sistema de altas y bajas que permite realizar las operaciones CRUD para administrar préstamos de distintos materiales educativos a alumnos, docentes y empleados.</p>
+                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="card shadow">
+                    <img src="./assets/images/knn.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">KNN Algorithm Simulator</h5>
+                      <p class="card-text">Proyecto realizado para la asignatura de teoría computacional. Simula el algoritmo KNN. Se usan la librería CSV para abrir archivos de este tipo y Matplotlib para generar gráficas.</p>
+                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="card shadow">
+                    <img src="./assets/images/teoriacomputacional.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">NFA String Validator</h5>
+                      <p class="card-text">Proyecto realizado para la asignatura de teoría computacional. Permite validar cadenas con la informacion obtenida de la tabla de transicion de un automata finito determinista (AFD)</p>
+                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          <div class="row pt-3">
+              <div class="col-md-4 col-sm-12">
+                <div class="card shadow">
+                    
+                    <img src="./assets/images/estructuras.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sales System</h5>
+                      <p class="card-text">Aplicación de consola realizada para la asignatura de estructuras de datos. Simula un sistema de comprar que permite registrar productos, asignarles un código y posteriormente encontrarlos usando el código como llave por medio de un árbol AVL. Se hace uso de las estructuras de datos lista ligada y Árbol AVL.</p>
+                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="card shadow">
+                    <img src="./assets/images/calculadora.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Derivative & Integrals Calculator</h5>
+                      <p class="card-text">Proyecto realizado para la asignatura de cálculo. Recibe una función simbólica y permite calcular su derivada o integral. Los cálculos son realizados usando la librería Sympy y el entorno gráfico usando PyQt</p>
+                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="card shadow">
+                    <img src="./assets/images/test-ss.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Career Quiz</h5>
+                      <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
+                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        
+            <h1 class="display-5" id="learning">Learning</h1>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
