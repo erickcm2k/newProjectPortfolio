@@ -1,11 +1,21 @@
-/* Spacing for navbar */
 body {
-    padding-top: 70px;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Nunito', sans-serif;
 }
 
-img {
-    max-height: 245px;
+.btn {
+        font-family: 'Roboto', sans-serif;
 }
+
+/* Spacing for navbar */
+body {
+    padding-top: 75px;
+}
+
+h5 {
+    font-weight: bold;
+}
+
 
 /* change title color */
 .navbar-custom .navbar-brand,
@@ -23,10 +33,43 @@ img {
     color: #ffffff;
 }
 
+/* My name */
+strong {
+    color: #eb550a;
+}
+
+/* All icons set to black */
 i.fab {
     color: rgba(0, 0, 0, 0.8);
 }
 
-strong {
-    color: #eb550a;
+/* Project images */
+.project-image {
+    max-height: 245px;
 }
+
+.learning-image {
+    
+    overflow: hidden;
+}
+
+.equal-height-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-column-content {
+    height: 100%;
+}
+
+#projects {
+    padding-top: 1.5rem;
+}
+
+#learning {
+    padding-top: 2rem;
+}
+

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="./css/styles.css">
 
     <meta charset="UTF-8">
@@ -35,7 +38,7 @@
         <!-- Contact section -->
         <ul class=" navbar-nav navbar-right">
                 <li class="nav-item">
-                  <a class="nav-link" href="">Resume</a>
+                  <a class="nav-link" href="./assets/pdf/Resume.pdf" target="_blank">Resume</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="">Contact Me</a>
@@ -47,7 +50,7 @@
     <div class="container">
         <div class="jumbotron shadow" id="about-me">
             <h1 class="display-4">Hi! I'm<strong> Erick Castañeda</strong></h1>
-            <p class="lead">I'm a Computer Engineering student.</p>
+            <p class="lead">I'm a <strong>Computer Engineering </strong>student.</p>
 
             
                 <div class="row">
@@ -60,84 +63,159 @@
             
             <hr class="my-4">
             <p>See more about my work</p>
-            
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="https://github.com/erickcm2k" target="_blank"><i class="fab fa-github fa-3x px-md-1"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.linkedin.com/in/erickcastanedamartinez/" target="_blank"><i class="fab fa-linkedin-in fa-3x px-md-1"></i></a></li>
-                <li class="list-inline-item"><a href="https://telegram.me/erickcm2k" target="_blank"><i class="fab fa-telegram fa-3x px-md-1"></i></a></li>
-            </ul>
+            <div class="container">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://github.com/erickcm2k" target="_blank"><i class="fab fa-github fa-3x px-md-1"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/erickcastanedamartinez/" target="_blank"><i class="fab fa-linkedin-in fa-3x px-md-1"></i></a></li>
+                  <li class="list-inline-item"><a href="https://telegram.me/erickcm2k" target="_blank"><i class="fab fa-telegram fa-3x px-md-1"></i></a></li>
+                </ul>
+            </div>
           </div>
 
           <h1 class="display-5" id="projects">Projects</h1>
           <!-- Project Grid -->
-          <div class="row pt-3">
+          <div class="row equal-height-column">
+            
               <div class="col-md-4 col-sm-12">
-                <div class="card shadow">
-                    <img src="./assets/images/biblioteca.png" class="card-img-top" alt="...">
+                <div class="card equal-column-content shadow">
+                    <img src="./assets/images/biblioteca.png" class="card-img-top project-image" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Library Manager</h5>
                       <p class="card-text">Sistema de altas y bajas que permite realizar las operaciones CRUD para administrar préstamos de distintos materiales educativos a alumnos, docentes y empleados.</p>
-                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 col-sm-12">
-                <div class="card shadow">
-                    <img src="./assets/images/knn.png" class="card-img-top" alt="...">
+                <div class="card equal-column-content shadow">
+                    <img src="./assets/images/knn.png" class="card-img-top project-image" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">KNN Algorithm Simulator</h5>
                       <p class="card-text">Proyecto realizado para la asignatura de teoría computacional. Simula el algoritmo KNN. Se usan la librería CSV para abrir archivos de este tipo y Matplotlib para generar gráficas.</p>
-                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 col-sm-12">
-                <div class="card shadow">
-                    <img src="./assets/images/teoriacomputacional.png" class="card-img-top" alt="...">
+                <div class="card equal-column-content shadow">
+                    <img src="./assets/images/teoriacomputacional.png" class="card-img-top project-image" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">NFA String Validator</h5>
                       <p class="card-text">Proyecto realizado para la asignatura de teoría computacional. Permite validar cadenas con la informacion obtenida de la tabla de transicion de un automata finito determinista (AFD)</p>
-                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
                     </div>
                   </div>
               </div>
             </div>
-          <div class="row pt-3">
+          <div class="row equal-height-column">
               <div class="col-md-4 col-sm-12">
-                <div class="card shadow">
+                <div class="card equal-column-content shadow">
                     
-                    <img src="./assets/images/estructuras.png" class="card-img-top" alt="...">
+                    <img src="./assets/images/estructuras.png" class="card-img-top project-image" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Sales System</h5>
                       <p class="card-text">Aplicación de consola realizada para la asignatura de estructuras de datos. Simula un sistema de comprar que permite registrar productos, asignarles un código y posteriormente encontrarlos usando el código como llave por medio de un árbol AVL. Se hace uso de las estructuras de datos lista ligada y Árbol AVL.</p>
-                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 col-sm-12">
-                <div class="card shadow">
-                    <img src="./assets/images/calculadora.png" class="card-img-top" alt="...">
+                <div class="card equal-column-content shadow">
+                    <img src="./assets/images/calculadora.png" class="card-img-top project-image" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Derivative & Integrals Calculator</h5>
                       <p class="card-text">Proyecto realizado para la asignatura de cálculo. Recibe una función simbólica y permite calcular su derivada o integral. Los cálculos son realizados usando la librería Sympy y el entorno gráfico usando PyQt</p>
-                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 col-sm-12">
-                <div class="card shadow">
-                    <img src="./assets/images/test-ss.png" class="card-img-top" alt="...">
+                <div class="card equal-column-content shadow">
+                    <img src="./assets/images/test-ss.png" class="card-img-top project-image" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Career Quiz</h5>
                       <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
-                      <a href="#" class="btn btn-primary">See it on <i class="fab fa-github"></i></a>
+                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
                     </div>
                   </div>
               </div>
             </div>
         
-            <h1 class="display-5" id="learning">Learning</h1>
 
+            <h1 class="display-5" id="learning">Learning</h1>
+            <!-- Learning Grid -->
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="card equal-column-content shadow">
+                    <img src="./assets/images/donaldEK.png" class="img-fluid learning-image" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">XII Donald E. Knuth Competitive Programming Contest</h5>
+                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
+                    <a href="#" class="btn btn-outline-primary">See it on</a>
+                  </div>
+                </div>              
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="card equal-column-content shadow">
+                  <img src="./assets/images/learnday.jpg" class="img-fluid learning-image" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Learn Day 19 ESCOM IPN</h5>
+                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
+                    <a href="#" class="btn btn-outline-primary">See it on</a>
+                  </div>
+                </div>              
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="card equal-column-content shadow">
+                  <div>
+                    <img src="./assets/images/googleevent.jpg" class="img-fluid learning-image" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Resume Review + Interview Workshop</h5>
+                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
+                    <a href="#" class="btn btn-outline-primary">See it on</a>
+                  </div>
+                </div>              
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="card equal-column-content shadow">
+                  <img src="./assets/images/cuartoverano.jpg" class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">4th Competitive Programming Training Summer Camp</h5>
+                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
+                    <a href="#" class="btn btn-outline-primary">See it on</a>
+                  </div>
+                </div>              
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="card equal-column-content shadow">
+                  <img src="./assets/images/iosdlunam.jpg" class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Introduction to iOS App Development</h5>
+                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
+                    <a href="#" class="btn btn-outline-primary">See it on</a>
+                  </div>
+                </div>              
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="card equal-column-content shadow">
+                  <img src="./assets/images/innovacion.png" class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Innovation Community</h5>
+                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
+                    <a href="#" class="btn btn-outline-primary">See it on</a>
+                  </div>
+                </div>              
+              </div>
+            </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
