@@ -16,7 +16,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
         <a class="navbar-brand" href="#">Erick Castañeda</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
       <!-- About me & projects -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-              <li class="nav-item text-white">
+              <li class="nav-item">
                 <a class="nav-link" href="#about-me">About Me</a>
               </li>
             <li class="nav-item">
@@ -41,7 +41,7 @@
                   <a class="nav-link" href="./assets/pdf/Resume.pdf" target="_blank">Resume</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Contact Me</a>
+                  <a class="nav-link" href="#contact-me">Contact Me</a>
                 </li>
         </ul>        
         </div>
@@ -51,18 +51,16 @@
         <div class="jumbotron shadow" id="about-me">
             <h1 class="display-4">Hi! I'm<strong> Erick Castañeda</strong></h1>
             <p class="lead">I'm a <strong>Computer Engineering </strong>student.</p>
-
             
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">                        
-                        <img src="./assets/images/perfil2.jpg" class="img-fluid rounded mx-auto d-block shadow" alt="...">                    
+                <div class="row d-flex justify-content-around align-items-center">
+                    <div class="col-sm-6">                        
+                        <img src="./assets/images/perfil2.jpg" id="contact-me" class="img-fluid rounded mx-auto d-block shadow" alt="...">                    
                     </div>
-                    <p class="col-md-6 col-sm-12">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="col-md-6 col-sm-12 p-3" style="font-size: 1.5rem;">I'm interested in solving problems using software.</p>
                 </div>
             
-            
             <hr class="my-4">
-            <p>See more about my work</p>
+            <p>See more about me</p>
             <div class="container">
                 <ul class="list-inline">
                   <li class="list-inline-item"><a href="https://github.com/erickcm2k" target="_blank"><i class="fab fa-github fa-3x px-md-1"></i></a></li>
@@ -73,148 +71,150 @@
           </div>
 
           <h1 class="display-5" id="projects">Projects</h1>
+          <hr class="py-2">
+          <h3 class="">School Projects</h3>
           <!-- Project Grid -->
-          <div class="row equal-height-column">
-            
-              <div class="col-md-4 col-sm-12">
-                <div class="card equal-column-content shadow">
-                    <img src="./assets/images/biblioteca.png" class="card-img-top project-image" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Library Manager</h5>
-                      <p class="card-text">Sistema de altas y bajas que permite realizar las operaciones CRUD para administrar préstamos de distintos materiales educativos a alumnos, docentes y empleados.</p>
-                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+          <div class="row d-flex justify-content-around align-items-center">
+              
+                <div class="p-2 col-sm-12 col-md-6 col-xl-4">
+                  <div class="card shadow">
+                      <img src="./assets/images/biblioteca.png" class="img-fluid" alt="...">
+                      <div class="card-body">
+                        <h6><strong>Using</strong> Java ~ MySQL</h6>
+                        <h5 class="card-title">Library Manager</h5>
+                        <p class="card-text">Created as final project for Object Oriented Programming. Allows the user to manage a library collection using an intuitive GUI.</p>
+                        <a href="https://github.com/erickcm2k/proyectoPOO" target="_blank" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="card equal-column-content shadow">
-                    <img src="./assets/images/knn.png" class="card-img-top project-image" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">KNN Algorithm Simulator</h5>
-                      <p class="card-text">Proyecto realizado para la asignatura de teoría computacional. Simula el algoritmo KNN. Se usan la librería CSV para abrir archivos de este tipo y Matplotlib para generar gráficas.</p>
-                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                </div>
+                <div class="p-2 col-sm-12 col-md-6 col-xl-4">
+                  <div class="card shadow">
+                      <img src="./assets/images/knn.png" class="img-fluid" alt="...">
+                      <div class="card-body">
+                        <h6><strong>Using</strong> Python</h6>
+                        <h5 class="card-title">KNN Algorithm Simulator</h5>
+                        <p class="card-text">Created as a challenge for Theory of Computation. A graphic representation for KNN (K Nearest Neighbors) pattern-recognition algorithm using Matplotlib.</p>
+                        <a href="https://github.com/erickcm2k/TeoriaComputacional" target="_blank" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="card equal-column-content shadow">
-                    <img src="./assets/images/teoriacomputacional.png" class="card-img-top project-image" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">NFA String Validator</h5>
-                      <p class="card-text">Proyecto realizado para la asignatura de teoría computacional. Permite validar cadenas con la informacion obtenida de la tabla de transicion de un automata finito determinista (AFD)</p>
-                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                </div>
+                <div class="p-2 col-sm-12 col-md-6 col-xl-4">
+                  <div class="card shadow">
+                      <img src="./assets/images/teoriacomputacional.png" class="img-fluid shadow" alt="...">
+                      <div class="card-body">
+                        <h6><strong>Using</strong> C++</h6>
+                        <h5 class="card-title">NFA String Validator</h5>
+                        <p class="card-text">Another challenge for Theory of Computation. Allows the user to validate character strings receiving its NFA state-transition table.</p>
+                        <a href="https://github.com/erickcm2k/TeoriaComputacional" target="_blank" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-            </div>
-          <div class="row equal-height-column">
-              <div class="col-md-4 col-sm-12">
-                <div class="card equal-column-content shadow">
-                    
-                    <img src="./assets/images/estructuras.png" class="card-img-top project-image" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Sales System</h5>
-                      <p class="card-text">Aplicación de consola realizada para la asignatura de estructuras de datos. Simula un sistema de comprar que permite registrar productos, asignarles un código y posteriormente encontrarlos usando el código como llave por medio de un árbol AVL. Se hace uso de las estructuras de datos lista ligada y Árbol AVL.</p>
-                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                </div>              
+                <div class="p-2 col-sm-12 col-md-6 col-xl-4">
+                  <div class="card shadow">
+                      
+                      <img src="./assets/images/estructuras.png" class="img-fluid shadow" alt="...">
+                      <div class="card-body">
+                        <h6><strong>Using</strong> C</h6>
+                        <h5 class="card-title">Sales System</h5>
+                        <p class="card-text">Console application for Data Structures & Algorithms.  Simulates a sales system, receiving product names and allowing the user to find it by its code. Uses linked lists and an AVL Tree, not the most optimal implementation.</p>
+                        <a href="https://github.com/erickcm2k/ProyectoEstructuras" target="_blank" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="card equal-column-content shadow">
-                    <img src="./assets/images/calculadora.png" class="card-img-top project-image" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Derivative & Integrals Calculator</h5>
-                      <p class="card-text">Proyecto realizado para la asignatura de cálculo. Recibe una función simbólica y permite calcular su derivada o integral. Los cálculos son realizados usando la librería Sympy y el entorno gráfico usando PyQt</p>
-                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                </div>
+                <div class="p-2 col-sm-12 col-md-6 col-xl-4">
+                  <div class="card shadow">
+                      <img src="./assets/images/calculadora.png" class="img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Derivative & Integrals Calculator</h5>
+                        <h6><strong>Using</strong> Python</h6>
+                        <p class="card-text">Challenge for One Variable Calculus. Calculates some derivative and integrals, receiving a symbolic string as argument. Uses Sympy and PyQt libraries.</p>
+                        <a href="https://github.com/erickcm2k/Calculo" target="_blank" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="card equal-column-content shadow">
-                    <img src="./assets/images/test-ss.png" class="card-img-top project-image" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Career Quiz</h5>
-                      <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
-                      <a href="#" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                </div>
+                <div class="p-2 col-sm-12 col-md-6 col-xl-4">
+                  <div class="card shadow">
+                      <img src="./assets/images/test-ss.png" class="img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Career Quiz</h5>
+                        <h6><strong>Using</strong> HTML ~ CSS ~ Javascript</h6>
+                        <p class="card-text">This was my very first tech project, made during High School (CECyT 12 IPN). Its purpose was to help my classmates to choose a technical carreer, giving a carrer quiz with information about the technical education offered by the school.</p>
+                        <a href="https://github.com/erickcm2k/ProyectoVocacional" target="_blank" class="btn btn-outline-primary">See it on <i class="fab fa-github"></i></a>
+                      </div>
                     </div>
-                  </div>
-              </div>
-            </div>
-        
+                </div>      
+        </div>
+                 
 
-            <h1 class="display-5" id="learning">Learning</h1>
+            <h1 class="display-5 pt-3" id="learning">Learning</h1>
+            <hr class="py-2">
             <!-- Learning Grid -->
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="card equal-column-content shadow">
-                    <img src="./assets/images/donaldEK.png" class="img-fluid learning-image" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">XII Donald E. Knuth Competitive Programming Contest</h5>
-                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
-                    <a href="#" class="btn btn-outline-primary">See it on</a>
-                  </div>
-                </div>              
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="card equal-column-content shadow">
-                  <img src="./assets/images/learnday.jpg" class="img-fluid learning-image" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Learn Day 19 ESCOM IPN</h5>
-                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
-                    <a href="#" class="btn btn-outline-primary">See it on</a>
-                  </div>
-                </div>              
-              </div>
+            
+            <div class="row d-flex justify-content-around align-items-center">              
+                <div class="col-sm-12 col-md-6 col-xl-4 event p-2">
+                  <div class="card shadow">
+                      <img src="./assets/images/donaldEK.png" class="img-fluid learning-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">XII Donald E. Knuth Competitive Programming Contest</h5>
+                      <p class="card-text">My very first competitive programming contest. Donald E. Knuth Contest usually take place at ESCOM IPN. Due to confination caused by COVID-19 virus, it was an online-contest. And for the first time it was expanded to include competitors from all Latin America.</p>
+                      <a href="https://www.facebook.com/events/570806507134708/" target="_blank" class="btn btn-outline-primary">Info</a>
+                    </div>
+                  </div>              
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 event p-2">
+                  <div class="card shadow">
+                    <img src="./assets/images/learnday.jpg" class="img-fluid learning-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Learn Day 19 ESCOM IPN</h5>
+                      <p class="card-text">Meeting organized by PoliHacks and MLH. We learned basics about backend development using Python's framework, Flask.</p>
+                      <a href="https://www.facebook.com/events/773346069753644/?active_tab=discussion" target="_blank" class="btn btn-outline-primary">Info</a>
+                    </div>
+                  </div>              
+                </div>                              
+                <div class="col-sm-12 col-md-6 col-xl-4 event p-2">
+                  <div class="card shadow">
+                    <div>
+                      <img src="./assets/images/googleevent.jpg" class="img-fluid learning-image" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Resume Review + Interview Workshop</h5>
+                      <p class="card-text">Meeting by Google software engineers at ESCOM IPN. They gave us tips about how to make a eye-catching resume and how to improve your performance during a whiteboard coding interview.</p>
+                      <a href="https://www.facebook.com/escomipnmx/photos/basw.Abp-0HmLy965WKxw35ESai4caR9OiIdM4-2flt3h8aUrTNcblCUDKVfC3KKM-FwYr7b1XvclunHAbyWYC6bhDgGlOIPpGeJ5tfQDOnC727SdgITx4sQJ7iKRBsjIqmqAIN2KTzBkoQvkBy5Cg59xUWh0.1361791033979478.1127119560664103.1372226176269297.1372226226269292.1372226216269293.1372225999602648/1361791033979478/?type=1&opaqueCursor=AboLwNV5KuInllVYgRV8xFNbKkd8CaTABSkVTO5DqkEFEx3r4wrMPObL10ASBrzY84oRFXD5zn9M1oNTsJPK8KPDdZ4ekT9WD10BQgioTnNmBr_mlJU1c7vVQjXKw0R_WquKdKg3upF-6uGXnv-jXsqIu-NEHRIvr5uvLOEF4reiRCHDHVE4eQ15iCOz_nNjG7qAkyWBBZIzYr8quS03Lz0LyOv1GiEiGQE-6KkJo7RWShuXS67ouYxn8kwrppH7CUMy2c9sjmqXfSfkyZsI-6e8u3PlRYL7wCeTsSEtmYhbYOdMzBtlGLqg4pwTAPwzve0xiugrGcFMeqi2kDp5ZMIetdx96lLsn6ggypYLOCU02BxtElc8-2IJ910sBMfBmy4ZSk_wSSOkuk5zhSJp5yZHR_yJA610NxUcEoQkUupgWQlVMCEI6cvQLL_KxRH7pXSM7PKoS_aUytnnNY3ODD_evewWY4ejVjl2d7JuNkPw9Rkjjl4X4icnOKhs-RtcaAcQSjzAqAd4E3WlFBcQ_5q8qxY8H8WDRv_YlLvz-GRXubX1tnByWc7iDr4mBGU0x8jsVNVzpuwwvKNMts1yLs6wSrZPHwh_B0M4ok0pRR9vjgsXimkBOHniBM1-HFp4PpmCwxg0FkDStVxHXYtiplcIZ5d1io8P96LtGq0lz0WdrUyuGIyM-h3nsk_YAZH3NUEMWaeaNPovTPkskjQEFG6goaG4SMrGj8_2ggOQOxpFAvhuU05ShI1vUdLGT21HXoKB4gXDuY0Wfm0pZIh0Y1WeASeEw68XeBHt1PJtmOhuCQ&theater" target="_blank" class="btn btn-outline-primary">Info</a>
+                    </div>
+                  </div>              
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 event p-2">
+                  <div class="card shadow">
+                    <img src="./assets/images/cuartoverano.jpg" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">4th Competitive Programming Training Summer Camp</h5>
+                      <p class="card-text">Summer Camp organized by ESCOM's Algorithm Design Club. We learned some tips to solve competitive programming challenges using data structures.</p>
+                      <a href="https://www.facebook.com/algoritmiaescom/" target="_blank" class="btn btn-outline-primary">Info</a>
+                    </div>
+                  </div>              
+                </div>  
+                <div class="col-sm-12 col-md-6 col-xl-4 event p-2">
+                  <div class="card shadow">
+                    <img src="./assets/images/iosdlunam.jpg" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Introduction to iOS App Development</h5>
+                      <p class="card-text">Course where I learned how to make basic iOS apps. At National Autonomus University of Mexico's iOS Development Lab.</p>
+                      <a href="http://ioslab.ingenieria.unam.mx/" target="_blank" class="btn btn-outline-primary">Info</a>
+                    </div>
+                  </div>              
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 event p-2">
+                  <div class="card shadow">
+                    <img src="./assets/images/innovacion.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Innovation Community NinjaCom</h5>
+                      <p class="card-text">The first university community I've took part in my first year at ESCOM. During the semester I learned the foundaments of Innovation, UX and Agile Methodologies. Also learned how to use some useful tools like Heroku and GitHub.</p>
+                      <a href="https://www.facebook.com/Innovacion.NinjaCom/?__tn__=%2Cd%2CP-R&eid=ARD4DcHOa-J0QoeNXYP-wuQOiy7q5Tj60vVZXyAVa41Wb6ATQIlXYanM7aPcju7o3ruyFaIbiBgRGlMy" target="_blank" class="btn btn-outline-primary">Info</a>
+                    </div>
+                  </div>              
+                </div>
             </div>
 
-
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="card equal-column-content shadow">
-                  <div>
-                    <img src="./assets/images/googleevent.jpg" class="img-fluid learning-image" alt="...">
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Resume Review + Interview Workshop</h5>
-                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
-                    <a href="#" class="btn btn-outline-primary">See it on</a>
-                  </div>
-                </div>              
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="card equal-column-content shadow">
-                  <img src="./assets/images/cuartoverano.jpg" class="img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">4th Competitive Programming Training Summer Camp</h5>
-                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
-                    <a href="#" class="btn btn-outline-primary">See it on</a>
-                  </div>
-                </div>              
-              </div>
-            </div>
-
-
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="card equal-column-content shadow">
-                  <img src="./assets/images/iosdlunam.jpg" class="img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Introduction to iOS App Development</h5>
-                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
-                    <a href="#" class="btn btn-outline-primary">See it on</a>
-                  </div>
-                </div>              
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="card equal-column-content shadow">
-                  <img src="./assets/images/innovacion.png" class="img-fluid" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Innovation Community</h5>
-                    <p class="card-text">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad.</p>
-                    <a href="#" class="btn btn-outline-primary">See it on</a>
-                  </div>
-                </div>              
-              </div>
             </div>
     </div>
 
