@@ -27,9 +27,12 @@ h5 {
 }
 
 
-/* My name */
-strong {
+.orangize {
     color: #eb550a;
+}
+
+.project-date {
+    color: rgb(0, 123, 255);
 }
 
 /* All icons set to black */

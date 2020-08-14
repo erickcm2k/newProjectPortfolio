@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        
+
+        <title>Mi Portafolio</title>
+        <link rel="icon"  href="./images/icono.png">    
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Fira+Sans&family=Sarabun&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/estilos.css">
+        <!-- <script src="./javascript/script.js"></script> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+            <i class="icon-menu burguer-button" id="burger-menu"></i>
+         <header class="header">
+            <div class="container">
+                <figure class="logo">
+                        <!-- <img src="./images/E.jpg" alt="Imagen principal del sitio" height="50px"> -->
+                </figure>
+                <nav class="menu">
+                    <ol>
+                        <li>
+                            <a class="link" href="#portafolio">Proyectos Escolares</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#eventos">Eventos Asistidos</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#contacto">Trabajemos Juntos</a>
+                        </li>
+                        <!-- <li>
+                            <a class="dayNightSwitch">Cambiar tema</a>
+                        </li> -->
+                    </ol>
+                </nav>
+            </div>
+        </header> 
+
+         <section class="hero"> 
+            <div class="container">
+                <h1>
+                    Hola! Soy<strong> Erick Castañeda,</strong> <br> futuro <strong>desarrollador!</strong>
+                </h1>
+                <img class="hero-image" src="./images/perfil2.jpg" alt="imagen principal del sitio" width="400" height="300">  
+            </div>
+        </section> 
+
+        <section id="portafolio" class="portfolio">
+            <div class="container">
+                <h2>Proyectos Escolares</h2>
+
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Administrador de biblioteca</h3>
+                        <h6 class="project-course">Java ~ MySQL Server</h6>
+                        <p class="project-date"><small><strong>Completado en: </strong>Junio 2020</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en: </strong> <a href="https://github.com/erickcm2k/proyectoPOO" target="_blank">github.com/erickcm2k/proyectoPOO</a> </small></p>
+                        <p class="project-description">Sistema de altas y bajas que permite realizar las operaciones CRUD para administrar préstamos de distintos materiales educativos a alumnos, docentes y empleados.</p>
+                    </div>
+                    <figure class="project-imageContainer">
+                    <img class="project-image" width="500px" src="./images/biblioteca.png" alt="biblioteca">
+                    </figure>
+                </article>
+
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Simulador K Nearest Neighbors (KNN)</h3>
+                        <h6 class="project-course">Python</h6>
+                        <p class="project-date"><small><strong>Completado en: </strong>Marzo 2020</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en: </strong> <a href="https://github.com/erickcm2k/TeoriaComputacional" target="_blank">github.com/erickcm2k/TeoriaComputacional</a> </small></p>
+                        <p class="project-description">Proyecto realizado para la asignatura de teoría computacional. Simula el algoritmo KNN. Se usan la librería CSV para abrir archivos de este tipo y Matplotlib para generar gráficas. </p>
+                    </div>
+                    <figure class="project-imageContainer">
+                    <img class="project-image" width="500px" src="./images/knn.png" alt="knn">
+                    </figure>
+                </article>
+
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Validador de cadenas</h3>
+                        <h6 class="project-course">C++</h6>
+                        <p class="project-date"><small><strong>Completado en: </strong>Febrero 2020</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en: </strong> <a href="https://github.com/erickcm2k/TeoriaComputacional" target="_blank">github.com/erickcm2k/TeoriaComputacional</a> </small></p>
+                        <p class="project-description">Proyecto realizado para la asignatura de teoría computacional. Permite validar cadenas con la informacion obtenida de la tabla de transicion de un automata finito determinista (AFD)</p>
+                    </div>
+                    <figure class="project-imageContainer">
+                    <img class="project-image" width="500px" src="./images/teoriacomputacional.png" alt="automata">
+                    </figure>
+                </article>
+
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Calculadora de Derivadas e Integrales</h3>
+                        <h6 class="project-course">Python</h6>
+                        <p class="project-date"><small><strong>Completado en: </strong>Diciembre 2019</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en: </strong> <a href="https://github.com/erickcm2k/Calculo" target="_blank">github.com/erickcm2k/Calculo</a> </small></p>
+                        <p class="project-description">Proyecto realizado para la asignatura de cálculo. Recibe una función simbólica y permite calcular su derivada o integral. Los cálculos son realizados usando la librería Sympy y el entorno gráfico usando PyQt</p>
+                    </div>
+                    <figure class="project-imageContainer">
+                    <img class="project-image" width="500px" src="./images/calculadora.png" alt="calculadora">
+                    </figure>
+                </article>
+
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Sistema de compras</h3>
+                        <h6 class="project-course">C</h6>
+                        <p class="project-date"><small><strong>Completado en: </strong>Diciembre 2019</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en: </strong> <a href="https://github.com/erickcm2k/ProyectoEstructuras" target="_blank">github.com/erickcm2k/ProyectoEstructuras</a> </small></p>
+                        <p class="project-description">Aplicación de consola realizada para la asignatura de estructuras de datos. Simula un sistema de comprar que permite registrar productos, asignarles un código y posteriormente encontrarlos usando el código como llave por medio de un árbol AVL. Se hace uso de las estructuras de datos lista ligada y Árbol AVL.</p>
+                    </div>
+                    <figure class="project-imageContainer">
+                    <img class="project-image" width="500px" src="./images/estructuras.png" alt="calculadora">
+                    </figure>
+                </article>
+                
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Test de orientación vocacional</h3>
+                        <h6 class="project-course">HTML ~ CSS ~ Javascript</h6>
+                        <p class="project-date"><small><strong>Completado en: </strong>Mayo 2018</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en: </strong> <a href="https://github.com/erickcm2k/ProyectoVocacional" target="_blank">github.com/erickcm2k/ProyectoVocacional</a> </small></p>
+                        <p class="project-description">Este fue mi primer proyecto escolar realizado en la preparatoria (CECyT #12 del IPN). Su propósito fue brindar información acerca de las carreras técnicas ofertadas por la unidad. </p>
+                    </div>
+                    <figure class="project-imageContainer">
+                    <img class="project-image" width="500px" src="./images/orientacionv.png" alt="calculadora">
+                    </figure>
+                </article>                
+            </div>
+        </section>
+
+        <div class="container">
+            <h2 class="event-list-title">Eventos Asistidos</h2>
+        </div>
+
+        <section id="eventos" class="event-list">
+
+        <div class="container">
+
+            
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="./images/concursoDonald.png" width="500px" alt="experiencia">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">XII Concurso Anual de Programación Donald E. Knuth</h3>
+                    <p class="event-description">Concurso de programación competitiva organizado por el Club de Algoritmia de ESCOM. Este año organizado a nivel latinoamerica.</p>
+                    <a class="event-url" target="_blank" href="https://www.facebook.com/events/570806507134708/"">Evento</a>
+                </div>
+            </article>
+
+            <article class="event">
+                    <figure class="event-imageContainer">
+                        <img class="event-image" src="./images/googleevent.jpg" width="500px" alt="experiencia">
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">Resume Review + Interview Workshop</h3>
+                        <p class="event-description">Tips para hacer un buen resume y una muestra de cómo se realizan las entrevistas de trabajo en Google. Evento realizado por ingenieros de software de Google.</p>
+                        <a class="event-url" target="_blank" href="https://www.facebook.com/escomipnmx/photos/basw.Abp-0HmLy965WKxw35ESai4caR9OiIdM4-2flt3h8aUrTNcblCUDKVfC3KKM-FwYr7b1XvclunHAbyWYC6bhDgGlOIPpGeJ5tfQDOnC727SdgITx4sQJ7iKRBsjIqmqAIN2KTzBkoQvkBy5Cg59xUWh0.1361791033979478.1127119560664103.1372226176269297.1372226226269292.1372226216269293.1372225999602648/1361791033979478/?type=1&opaqueCursor=AboLwNV5KuInllVYgRV8xFNbKkd8CaTABSkVTO5DqkEFEx3r4wrMPObL10ASBrzY84oRFXD5zn9M1oNTsJPK8KPDdZ4ekT9WD10BQgioTnNmBr_mlJU1c7vVQjXKw0R_WquKdKg3upF-6uGXnv-jXsqIu-NEHRIvr5uvLOEF4reiRCHDHVE4eQ15iCOz_nNjG7qAkyWBBZIzYr8quS03Lz0LyOv1GiEiGQE-6KkJo7RWShuXS67ouYxn8kwrppH7CUMy2c9sjmqXfSfkyZsI-6e8u3PlRYL7wCeTsSEtmYhbYOdMzBtlGLqg4pwTAPwzve0xiugrGcFMeqi2kDp5ZMIetdx96lLsn6ggypYLOCU02BxtElc8-2IJ910sBMfBmy4ZSk_wSSOkuk5zhSJp5yZHR_yJA610NxUcEoQkUupgWQlVMCEI6cvQLL_KxRH7pXSM7PKoS_aUytnnNY3ODD_evewWY4ejVjl2d7JuNkPw9Rkjjl4X4icnOKhs-RtcaAcQSjzAqAd4E3WlFBcQ_5q8qxY8H8WDRv_YlLvz-GRXubX1tnByWc7iDr4mBGU0x8jsVNVzpuwwvKNMts1yLs6wSrZPHwh_B0M4ok0pRR9vjgsXimkBOHniBM1-HFp4PpmCwxg0FkDStVxHXYtiplcIZ5d1io8P96LtGq0lz0WdrUyuGIyM-h3nsk_YAZH3NUEMWaeaNPovTPkskjQEFG6goaG4SMrGj8_2ggOQOxpFAvhuU05ShI1vUdLGT21HXoKB4gXDuY0Wfm0pZIh0Y1WeASeEw68XeBHt1PJtmOhuCQ&theater">Evento</a>
+                    </div>
+                </article>
+
+                <article class="event">
+                    <figure class="event-imageContainer">
+                        <img class="event-image" src="./images/learnday.jpg" width="500px" alt="experiencia">
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">Learn Day 19 ESCOM IPN</h3>
+                        <p class="event-description">Evento organizado por PoliHacks; la comunidad hacker del IPN y la comunidad Innovación ESCOM. Vimos temas como desarrollo web con Flask, matemáticas para la computación y Lean Software Development.</p>
+                        <a class="event-url" target="_blank" href="https://www.facebook.com/events/773346069753644/?active_tab=discussion">Evento</a>
+                     </div>
+                </article>
+
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="./images/cuartoverano.jpg" width="500px" alt="experiencia">
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">4to verano de entrenamiento en programación competitiva</h3>
+                    <p class="event-description">Campamento de verano organizado por el Club de Algoritmia de ESCOM. Aprendimos distintas técnicas para resolver problemas de programación competitiva mediante el uso de estructuras de datos.</p>
+                    <a class="event-url" target="_blank" href="https://www.facebook.com/algoritmiaescom/">Algoritmia ESCOM</a>
+                 </div>
+            </article>
+            
+            <article class="event">
+                    <figure class="event-imageContainer">
+                        <img class="event-image" src="./images/iosdlunam.jpg" width="500px" alt="experiencia">
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">Introduction to programming with Swift</h3>
+                        <p class="event-description">Curso de fundamentos de desarrollo de aplicaciones para iOS. Se llevó a cabo en la UNAM, dentro del iOS Development Lab de la Facultad de Ingeniería. </p>
+                        <a class="event-url" target="_blank" href="http://ioslab.ingenieria.unam.mx/">iOS Development Lab Fi</a>
+                    </div>
+                </article>
+    
+            <article class="event">
+                    <figure class="event-imageContainer">
+                        <img class="event-image" src="./images/innovacion.png" width="500px" alt="experiencia">
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">Taller de innovación tecnológica</h3>
+                        <p class="event-description">Taller intersemestral llevado a cabo en ESCOM, en el cual aprendimos temas relacionados con innovación, solución de problemas, metodologías ágiles, chatbots, Git y Github.</p>
+                        <a class="event-url" target="_blank" href="https://www.facebook.com/Innovacion.ESCOM/">Innovación ESCOM</a>
+                    </div>
+                </article>
+    
+                
+
+        </div>
+
+        </section>
+  
+        <section id="contacto" class="contact">
+
+            <div class="container">
+                <h3 class="social-message">Contacto</h3>
+                <!-- <form action="/suscription/" class="form-email">
+                <input type="text" placeholder="Dejame tu email" id="email" required name="email">
+                <button>Enviar</button>
+                </form> -->
+                <div class="social">
+                    <a href="https://telegram.me/erickcm2k" class="social-link telegram" target="_blank"></a>
+                    <a href="https://www.facebook.com/erick.castanedamtz" class="social-link facebook" target="_blank"></a>
+                    <a href="https://github.com/erickcm2k" class="social-link github" target="_blank"></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div>
+                    <p>Portafolio personal</p>
+                </div>
+    
+                <div>
+                    <p>Designed with &#x2764 by me. </p> 
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="./javascript/script.js"></script>
+</html>
