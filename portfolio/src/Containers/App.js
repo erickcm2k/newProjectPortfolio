@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from '../Components/Navbar'
+import Hero from "../Components/Hero/Hero";
+import Navbar from '../Components/Navbar/Navbar'
 
+import './reset.css'
 class App extends React.Component {
   render() {
     return (
       <React.Fragment>
       <Navbar/>
-      <div>
-        <p style={{ color: "blue" }}>Hello World</p>
-      </div>
+      <Hero/>
       </React.Fragment>
     );
   }

@@ -1,0 +1,49 @@
+.Navbar {
+  width: 100vw;
+  background-color: #eb550a;
+  position: fixed;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.List {
+  height: 5rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Logo and */
+.logo {
+  flex: 1;
+}
+
+/* font-family: 'Raleway', sans-serif; */
+
+.List li {
+  padding: 1.5rem 1rem;
+}
+/* Avoid using another flex container */
+.List li:last-child {
+  padding-right: 5rem;
+}
+/* Avoid using another flex container */
+.List li:first-child {
+  padding-left: 5rem;
+}
+
+.List li:hover {
+  text-decoration: underline;
+}
+.List li span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.List li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+}
