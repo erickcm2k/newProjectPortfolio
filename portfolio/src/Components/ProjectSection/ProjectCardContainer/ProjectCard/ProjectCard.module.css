@@ -1,0 +1,97 @@
+.card {
+  width: 25%;
+  background-color: white;
+  margin-left: 0.83rem;
+  margin-bottom: 2.5rem;
+  /* border: 1px solid red; */
+  border-radius: 1rem;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* .projectImageContainer {
+  width: 11rem;
+} */
+
+.projectImage {
+  width: 100%;
+}
+
+.cardBody {
+  flex-direction: column;
+  display: flex;
+  padding: 1rem;
+}
+
+.projectName {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.date {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.description {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.buttonContainer {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.githubButton {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.githubButton:hover {
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.visitButton {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: #71a00d;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.visitButton:hover {
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.technologiesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.technologie {
+  background-color: #eb550a;
+  color: white;
+  margin: 0.2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+}

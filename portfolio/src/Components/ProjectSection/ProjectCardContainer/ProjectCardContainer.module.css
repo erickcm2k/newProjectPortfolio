@@ -1,0 +1,8 @@
+.projectSection {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
