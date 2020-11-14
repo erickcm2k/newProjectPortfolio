@@ -1,76 +1,85 @@
 import React from "react";
 import classes from "./ProjectCardContainer.module.css";
 import ProjectCard from "./ProjectCard/ProjectCard";
-
+import codivTracker from "../../../assets/images/covid-19-tracker.png";
+import calculadora from "../../../assets/images/calculadora.png";
+import libraryManager from "../../../assets/images/biblioteca.png";
+import knn from "../../../assets/images/knn.png";
+import nfaValidador from "../../../assets/images/nfa-validator.png";
+import salesSystem from "../../../assets/images/sales-system.png";
+import careerQuiz from "../../../assets/images/career-quiz.png";
 const ProjectCardContainer = () => {
   const data = [
     {
-      projectName: "Covid 19 Tracker1",
+      projectName: "Covid 19 Tracker",
       date: "September 2020",
       description:
         "Created as a personal challenge for applying API consuming skills. Allows the user to track COVID-19 worlwide status and search by an specific country. Built using Google Maps API and COVID 19 API.",
       github: "https://github.com/erickcm2k/covid-19-tracker",
       url: "https://www.google.com.mx/",
-      projectImage:
-        "https://images.unsplash.com/photo-1605116900847-77c07153a083?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-      technologies: ["HTML", "CSS", "Javascript", "Python"],
+      projectImage: codivTracker,
+      technologies: ["HTML", "CSS", "Javascript"],
     },
     {
-      projectName: "Covid 19 Tracker2",
+      projectName: "Library Manager",
       date: "September 2020",
       description:
-        "Created as a personal challenge for applying API consuming skills. Allows the user to track COVID-19 worlwide status and search by an specific country. Built using Google Maps API and COVID 19 API.",
+        "Created as final project for Object Oriented Programming. Allows the user to manage a library collection using an intuitive GUI.",
       github: "https://github.com/erickcm2k/covid-19-tracker",
       url: "https://www.google.com.mx/",
-      projectImage:
-        "https://images.unsplash.com/photo-1605116900847-77c07153a083?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-      technologies: ["HTML", "CSS", "Javascript", "Python"],
+      projectImage: libraryManager,
+      technologies: ["Java", "MySQL"],
     },
     {
-      projectName: "Covid 19 Tracker3",
+      projectName: "KNN Simulator",
       date: "September 2020",
       description:
-        "Created as a personal challenge for applying API consuming skills. Allows the user to track COVID-19 worlwide status and search by an specific country. Built using Google Maps API and COVID 19 API.",
+        "Another challenge for Theory of Computation. A graphic representation for KNN (K Nearest Neighbors) pattern-recognition algorithm using Matplotlib.",
       github: "https://github.com/erickcm2k/covid-19-tracker",
       url: "https://www.google.com.mx/",
-      projectImage:
-        "https://images.unsplash.com/photo-1605116900847-77c07153a083?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-      technologies: ["HTML", "CSS", "Javascript", "Python"],
+      projectImage: knn,
+      technologies: ["Python"],
     },
     {
-      projectName: "Covid 19 Tracker4",
+      projectName: "NFA String Validator",
       date: "September 2020",
       description:
-        "Created as a personal challenge for applying API consuming skills. Allows the user to track COVID-19 worlwide status and search by an specific country. Built using Google Maps API and COVID 19 API.",
+        "Created as a challenge for Theory of Computation. Allows the user to validate character strings receiving their NFA state-transition table.",
       github: "https://github.com/erickcm2k/covid-19-tracker",
       url: "https://www.google.com.mx/",
-      projectImage:
-        "https://images.unsplash.com/photo-1605116900847-77c07153a083?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-      technologies: ["HTML", "CSS", "Javascript", "Python"],
+      projectImage: nfaValidador,
+      technologies: ["C++"],
     },
     {
-      projectName: "Covid 19 Tracker5",
+      projectName: "Sales System",
       date: "September 2020",
       description:
-        "Created as a personal challenge for applying API consuming skills. Allows the user to track COVID-19 worlwide status and search by an specific country. Built using Google Maps API and COVID 19 API.",
+        "Console application for Data Structures & Algorithms. Simulates a sales system, receiving product names and allowing the user to find it by its code. Uses linked lists and an AVL Tree, not the most optimal implementation.",
       github: "https://github.com/erickcm2k/covid-19-tracker",
       url: "https://www.google.com.mx/",
-      projectImage:
-        "https://images.unsplash.com/photo-1605116900847-77c07153a083?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-      technologies: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Python",
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Python",
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Python",
-      ],
+      projectImage: salesSystem,
+      technologies: ["C"],
+    },
+    {
+      projectName: "Derivatives & Integrals Calculator",
+      date: "September 2020",
+      description:
+        "Challenge for One Variable Calculus. Calculates some derivative and integrals, receiving a symbolic string as argument. Uses Sympy and PyQt libraries.",
+      github: "https://github.com/erickcm2k/covid-19-tracker",
+      url: "https://www.google.com.mx/",
+      projectImage: calculadora,
+      technologies: ["Python"],
+    },
+
+    {
+      projectName: "Career Quiz",
+      date: "September 2020",
+      description:
+        "This was my very first tech project, made during High School (CECyT 12 IPN). Its purpose was to help my classmates to choose a technical carreer, giving a carrer quiz with information about the technical education offered by the school.",
+      github: "https://github.com/erickcm2k/covid-19-tracker",
+      url: "https://www.google.com.mx/",
+      projectImage: careerQuiz,
+      technologies: ["HTML", "CSS", "Javascript"],
     },
   ];
 

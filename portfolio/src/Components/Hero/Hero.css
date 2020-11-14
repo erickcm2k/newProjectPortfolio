@@ -1,5 +1,6 @@
 .hero {
-  padding-top: 7rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
 }
 
 /* Main container for about-me and description */
@@ -58,7 +59,7 @@
   margin: 0 auto;
   border-radius: 50%;
   box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.3);
-  background-image: url(https://images.unsplash.com/photo-1586126733047-34193003d8df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+  background-image: url("../../assets/images/me.jpg");
   background-size: cover;
   background-position: center center;
 }

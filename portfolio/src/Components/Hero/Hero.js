@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-
+import mainImage from '../../assets/images/me.jpg'
 const Hero = () => {
   const resumeURL =
     "https://drive.google.com/file/d/1e0pITxo1H_ceRGIAD57k99NAywCP6B2z/view?usp=sharing";

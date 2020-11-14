@@ -24,19 +24,24 @@ const ProjectCard = (props) => {
             );
           })}
         </div>
+
         <div className={classes.buttonContainer}>
-          <button
-            onClick={() => btnClick(props.github)}
-            className={classes.githubButton}
-          >
-            View on Github
-          </button>
-          <button
-            onClick={() => btnClick(props.github)}
-            className={classes.visitButton}
-          >
-            Visit
-          </button>
+          {props.github && (
+            <button
+              onClick={() => btnClick(props.github)}
+              className={classes.githubButton}
+            >
+              View on Github
+            </button>
+          )}
+          {props.url &&(
+            <button
+              onClick={() => btnClick(props.url)}
+              className={classes.visitButton}
+            >
+              Visit
+            </button>
+          )}
         </div>
       </div>
     </article>

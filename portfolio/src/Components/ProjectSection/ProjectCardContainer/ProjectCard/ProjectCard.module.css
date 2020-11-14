@@ -7,11 +7,18 @@
   border-radius: 1rem;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
+  box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.3);
 }
 
 /* .projectImageContainer {
   width: 11rem;
 } */
+
+.projectImageContainer {
+  width: 100%;
+  max-height: 20rem;
+  overflow: hidden;
+}
 
 .projectImage {
   width: 100%;
@@ -29,19 +36,42 @@
 }
 
 .date {
+  padding-top: 1rem;
   font-weight: 500;
   font-size: 2rem;
   color: #007bff;
 }
 
 .description {
+  padding-top: 1rem;
   font-size: 1.6rem;
   line-height: 1.3;
+  text-align: justify;
+}
+
+.technologiesContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.technologie {
+  background-color: #eb550a;
+  color: white;
+  font-size: 1.3rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  padding: 0.5rem 0.6rem;
 }
 
 .buttonContainer {
-  align-self: center;
+  padding-top: 1rem;
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 
@@ -49,7 +79,7 @@
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  background-color: #007bff;
+  background-color: #30475e;
   color: white;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -78,20 +108,4 @@
 
 .visitButton:hover {
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
-}
-
-.technologiesContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.technologie {
-  background-color: #eb550a;
-  color: white;
-  margin: 0.2rem;
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.5rem;
 }
