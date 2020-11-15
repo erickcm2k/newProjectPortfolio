@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../../Containers/Container/Container";
 import "./Navbar.css";
 
 class NavBar extends React.Component {
@@ -36,25 +37,27 @@ class NavBar extends React.Component {
   render() {
     return (
       <nav className={this.state.visible ? "Navbar" : "Navbar-hiden"}>
-        <ul className="List">
-          <li className="logo">
-            <a href="https://www.google.com">
-              <span>Erick Castañeda</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com">About Me</a>
-          </li>
-          <li>
-            <a href="https://www.google.com">Projects</a>
-          </li>
-          <li>
-            <a href="https://www.google.com">Skills</a>
-          </li>
-          <li>
-            <a href="https://www.google.com">Contact</a>
-          </li>
-        </ul>
+        <Container>
+          <ul className="List">
+            <li className="logo">
+              <a href="https://www.google.com">
+                <span>Erick Castañeda</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com">About Me</a>
+            </li>
+            <li>
+              <a href="https://www.google.com">Projects</a>
+            </li>
+            <li>
+              <a href="https://www.google.com">Skills</a>
+            </li>
+            <li>
+              <a href="https://www.google.com">Contact</a>
+            </li>
+          </ul>
+        </Container>
       </nav>
     );
   }

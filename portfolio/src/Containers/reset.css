@@ -202,7 +202,8 @@ audio:not([controls]) {
 
 html {
   font-size: 62.5%; /* 1 */
-  -webkit-text-size-adjust: 62.5%; /* 2 */
+  /* -webkit-text-size-adjust: 62.5%;  CREATES A BUG ON IOS DEVICES   */ 
+   /* 2 */
   -ms-text-size-adjust: 62.5%; /* 2 */
 }
 
