@@ -16,7 +16,7 @@ const ProjectCardContainer = () => {
       description:
         "Created as a personal challenge for applying API consuming skills. Allows the user to track COVID-19 worlwide status and search by an specific country. Built using Google Maps API and COVID 19 API.",
       github: "https://github.com/erickcm2k/covid-19-tracker",
-      url: "https://www.google.com.mx/",
+      // url: "https://www.google.com.mx/",
       projectImage: codivTracker,
       technologies: ["HTML", "CSS", "Javascript"],
     },
@@ -25,7 +25,7 @@ const ProjectCardContainer = () => {
       date: "September 2020",
       description:
         "Created as final project for Object Oriented Programming. Allows the user to manage a library collection using an intuitive GUI.",
-      github: "https://github.com/erickcm2k/covid-19-tracker",
+      // github: "https://github.com/erickcm2k/covid-19-tracker",
       url: "https://www.google.com.mx/",
       projectImage: libraryManager,
       technologies: ["Java", "MySQL"],

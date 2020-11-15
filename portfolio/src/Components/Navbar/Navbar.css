@@ -17,12 +17,14 @@
 
 /* Logo and */
 .logo {
-  flex: 1;
+  flex-grow: 1;
+  border: 1px solid blue;
 }
 
 /* font-family: 'Raleway', sans-serif; */
 
 .List li {
+  border: 1px solid blue;
   padding: 1.5rem 1rem;
 }
 /* Avoid using another flex container */
