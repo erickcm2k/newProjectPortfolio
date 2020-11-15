@@ -11,3 +11,10 @@
   font-weight: bold;
   text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+  .sectionTitle {
+    padding-top: 2.5rem;
+    font-size: 3rem;
+  }
+}

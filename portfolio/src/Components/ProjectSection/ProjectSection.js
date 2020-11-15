@@ -1,12 +1,11 @@
 import React from "react";
 import classes from "./ProjectSection.module.css";
-import ProjectCardContainer from "./ProjectCardContainer/ProjectCardContainer";
 
-const ProjectSection = () => {
+const ProjectSection = ({ children, ...props }) => {
   return (
-    <section className={classes.projectSection}>
+    <section className={classes.projectSection} {...props}>
       <h1 className={classes.sectionTitle}>Projects</h1>
-      <ProjectCardContainer />
+      {children}
     </section>
   );
 };

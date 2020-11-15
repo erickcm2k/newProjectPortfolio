@@ -74,7 +74,6 @@
   align-self: center;
   justify-content: space-evenly;
   flex-direction: row;
-  
 }
 
 .githubButton {
@@ -106,4 +105,48 @@
 
 .visitButton:hover {
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1024px) {
+
+  .projectName {
+    font-size: 2rem;
+  }
+
+  .date {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+
+  .buttonContainer {
+    margin-top: 1rem;
+  }
+
+  .githubButton {
+    font-size: 1.2rem;
+  }
+
+  .visitButton {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 45%;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
 }
