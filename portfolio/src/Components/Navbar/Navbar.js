@@ -1,7 +1,8 @@
 import React from "react";
 import Container from "../../Containers/Container/Container";
-import DrawerMenu from './DrawerMenu/DrawerMenu'
-import Backdrop from './Backdrop/Backdrop'
+import DrawerMenu from "./DrawerMenu/DrawerMenu";
+import Backdrop from "./Backdrop/Backdrop";
+
 import "./Navbar.scss";
 
 class NavBar extends React.Component {
@@ -32,14 +33,14 @@ class NavBar extends React.Component {
   };
 
   toggleBurgerButton = () => {
-    this.setState ({
+    this.setState({
       responsiveMenu: !this.state.responsiveMenu,
-    })
-  }
+    });
+  };
 
   backdropClickHandler = () => {
-    this.setState({responsiveMenu: false})
-  }
+    this.setState({ responsiveMenu: false });
+  };
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -52,28 +53,44 @@ class NavBar extends React.Component {
   render() {
     let sideDrawer;
     let backdrop;
-    if(this.state.responsiveMenu) {
-      backdrop = <Backdrop click={this.backdropClickHandler}/>
+    if (this.state.responsiveMenu) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
       <React.Fragment>
+        <nav className={this.state.visible ? "Navbar" : "Navbar-hiden"}>
+          <Container>
+            {/* {sideDrawer} */}
+            <DrawerMenu
+              toggleButton={this.toggleBurgerButton}
+              show={this.state.responsiveMenu}
+            />
+            {backdrop}
+            <ul className="List">
+              <li className="List-Logo">
+                <span>Erick Castañeda</span>
+              </li>
 
-      <nav className={this.state.visible ? "Navbar" : "Navbar-hiden"}>
-        <Container>
-        {/* {sideDrawer} */}
-        <DrawerMenu toggleButton={this.toggleBurgerButton} show={this.state.responsiveMenu}/>
-        {backdrop}
-          <ul className="List">
-            <li className="List-Logo"><span>Erick Castañeda</span></li>
-            <li className="Active"><a href="https://www.google.com">About Me</a></li>
-            <li className="Active"><a href="https://www.google.com">Projects</a></li>
-            <li className="Active"><a href="https://www.google.com">Skills</a></li>
-            <li className="Active"><a href="https://www.google.com">Contact</a></li>
-            <li className="Active"><a href="https://www.google.com">Contact</a></li>
-            <li className="Toggle" onClick={() => this.toggleBurgerButton()}><a href="#"><i className="fas fa-bars"></i></a></li>
-          </ul>
-        </Container>
-      </nav>
+              <li className="Active">
+                <a href="#">Skills</a>
+              </li>
+              <li className="Active">
+                <a href="#">Projects</a>
+              </li>
+              <li className="Active">
+                <a href="#">Blog</a>
+              </li>
+              <li className="Active">
+                <a href="#">Contact</a>
+              </li>
+              <li className="Toggle" onClick={() => this.toggleBurgerButton()}>
+                <a href="#">
+                  <i className="fas fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </Container>
+        </nav>
       </React.Fragment>
     );
   }

@@ -34,8 +34,9 @@
 }
 
 .projectName {
+  text-transform: capitalize;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .date {
@@ -82,7 +83,7 @@
 .githubButton {
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   background-color: #30475e;
   color: white;
   border-radius: 0.5rem;
@@ -97,7 +98,7 @@
 .visitButton {
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   background-color: #71a00d;
   color: white;
   border-radius: 0.5rem;
