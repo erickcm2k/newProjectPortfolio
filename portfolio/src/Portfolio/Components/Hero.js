@@ -1,12 +1,13 @@
 import React from "react";
 import "./Hero.css";
-import Container from "../../Containers/Container/Container";
+import Container from "../../Shared/Container/Container";
 import Typical from "react-typical";
+import resume from "../../Assets/pdf/resume.pdf";
+
 const Hero = () => {
-  const resumeURL =
-    "https://drive.google.com/file/d/1e0pITxo1H_ceRGIAD57k99NAywCP6B2z/view?usp=sharing";
-  const btnClick = () => {
-    window.open(resumeURL);
+  
+  const openResume = () => {
+    window.open(resume);
   };
 
   return (
@@ -18,8 +19,6 @@ const Hero = () => {
               Hi, I’m <span className="orangize">Erick Castañeda</span>!
             </div>
             <div className="about-me--whatiam">
-              {/* I’m a <span className="orangize">computer engineering</span>{" "}
-              student */}
               I'm a{" "}
               <Typical
                 loop={Infinity}
@@ -37,7 +36,7 @@ const Hero = () => {
                 ]}
               />
             </div>
-            <button onClick={btnClick} className="about-me--button">
+            <button onClick={openResume} className="about-me--button">
               View my CV
             </button>
           </div>

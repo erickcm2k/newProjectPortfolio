@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "../../Containers/Container/Container";
-import DrawerMenu from "./DrawerMenu/DrawerMenu";
-import Backdrop from "./Backdrop/Backdrop";
+import Container from "../../Shared/Container/Container";
+import DrawerMenu from "./DrawerMenu";
+import Backdrop from "./Backdrop";
 
 import "./Navbar.scss";
 

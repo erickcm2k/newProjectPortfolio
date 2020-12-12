@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   &-item {
     font-size: 2rem;
@@ -35,9 +36,9 @@
 }
 
 .close-menu {
-  align-self: flex-start;
-  padding-left: 3rem;
-  flex: 1;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.5rem;
   color: #eb550a;
   font-size: 4rem;
 }

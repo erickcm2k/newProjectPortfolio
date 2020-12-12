@@ -10,20 +10,21 @@ const DrawerMenu = (props) => {
   return (
     <nav className={drawerClasses}>
       <ul className="menu">
-        <li className="menu-item close-menu" onClick={props.toggleButton}>
-          <i className="fas fa-times-circle"></i>
-        </li>
-
-        <li className="menu-item">
-          <a href="https://www.google.com">Projects</a>
+        <li className=" close-menu" onClick={props.toggleButton}>
+        <i class="fas fa-times"></i>
         </li>
         <li className="menu-item">
           <a href="https://www.google.com">Skills</a>
         </li>
         <li className="menu-item">
+          <a href="https://www.google.com">Projects</a>
+        </li>
+        <li className="menu-item">
+          <a href="https://www.google.com">Blog</a>
+        </li>
+        <li className="menu-item">
           <a href="https://www.google.com">Contact</a>
         </li>
-        <li className="close-menu"></li>
       </ul>
     </nav>
   );

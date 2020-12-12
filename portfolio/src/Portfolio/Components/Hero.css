@@ -59,9 +59,10 @@
   margin: 0 auto;
   border-radius: 50%;
   box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.3);
-  background-image: url("../../assets/images/me.jpg");
+  background-image: url("../../Assets/images/me.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position-x: center;
+  background-position-y: -5rem;
 }
 
 /* Second element */
@@ -84,8 +85,8 @@
   flex-direction: row;
 }
 .icon-container i {
-  color: black;
-  padding: 0 0.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0 1rem;
 }
 
 .message {
@@ -145,6 +146,8 @@
   .picture {
     height: 20rem;
     width: 20rem;
+    background-position-x: center;
+    background-position-y: -2rem;
   }
 
   .message {

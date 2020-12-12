@@ -1,14 +1,17 @@
 import React from "react";
+
+import ProjectCard from "./ProjectCard";
+
 import classes from "./ProjectCardContainer.module.css";
-import ProjectCard from "./ProjectCard/ProjectCard";
-import codivTracker from "../../../assets/images/covid-19-tracker.png";
-import calculadora from "../../../assets/images/calculadora.png";
-import libraryManager from "../../../assets/images/biblioteca.png";
-import knn from "../../../assets/images/knn.png";
-import nfaValidador from "../../../assets/images/nfa-validator.png";
-import salesSystem from "../../../assets/images/sales-system.png";
-import careerQuiz from "../../../assets/images/career-quiz.png";
-import coronAImage from "../../../assets/images/coronAImage.png";
+import covidTracker from "../../Assets/images/covid-19-tracker.png";
+import calculadora from "../../Assets/images/calculadora.png";
+import libraryManager from "../../Assets/images/biblioteca.png";
+import knn from "../../Assets/images/knn.png";
+import nfaValidador from "../../Assets/images/nfa-validator.png";
+import salesSystem from "../../Assets/images/sales-system.png";
+import careerQuiz from "../../Assets/images/career-quiz.png";
+import coronAImage from "../../Assets/images/coronAImage.png";
+
 const ProjectCardContainer = () => {
   const data = [
     {
@@ -27,7 +30,7 @@ const ProjectCardContainer = () => {
       description:
         "Created as a personal challenge project. Allows the user to track COVID-19 worlwide status and search by an specific country. Built using Google Maps API and COVID 19 API.",
       github: "https://github.com/erickcm2k/covid-19-tracker",
-      projectImage: codivTracker,
+      projectImage: covidTracker,
       technologies: ["HTML", "CSS", "Javascript"],
     },
     {
