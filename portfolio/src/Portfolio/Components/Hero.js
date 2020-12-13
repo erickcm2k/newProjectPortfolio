@@ -2,14 +2,8 @@ import React from "react";
 import "./Hero.css";
 import Container from "../../Shared/Container/Container";
 import Typical from "react-typical";
-import resume from "../../Assets/pdf/resume.pdf";
 
 const Hero = () => {
-  
-  const openResume = () => {
-    window.open(resume);
-  };
-
   return (
     <Container>
       <section className="hero">
@@ -36,9 +30,13 @@ const Hero = () => {
                 ]}
               />
             </div>
-            <button onClick={openResume} className="about-me--button">
-              View my CV
-            </button>
+
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1yoauTkuNizFu6aNa8eNiNBMyEU2P1wkr/view?usp=sharing"
+            >
+              <button className="about-me--button">View my CV</button>
+            </a>
           </div>
           <div className="picture-container">
             <figure className="picture"></figure>
