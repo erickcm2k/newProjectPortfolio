@@ -4,14 +4,14 @@ import ProjectCard from "./ProjectCard";
 
 import classes from "./ProjectCardContainer.module.css";
 
-import calculadora from "../../Assets/images/calculadora.png";
-import libraryManager from "../../Assets/images/biblioteca.png";
-import knn from "../../Assets/images/knn.png";
-import nfaValidador from "../../Assets/images/nfa-validator.png";
-import salesSystem from "../../Assets/images/sales-system.png";
-import careerQuiz from "../../Assets/images/career-quiz.png";
-import coronAImage from "../../Assets/images/coronAImage.png";
-import covidTracker from "../../Assets/images/covid-19-tracker.png";
+import calculadora from "../../assets/images/calculadora.png";
+import libraryManager from "../../assets/images/biblioteca.png";
+import knn from "../../assets/images/knn.png";
+import nfaValidador from "../../assets/images/nfa-validator.png";
+import salesSystem from "../../assets/images/sales-system.png";
+import careerQuiz from "../../assets/images/career-quiz.png";
+import coronAImage from "../../assets/images/coronaimage.png";
+import covidTracker from "../../assets/images/covid-19-tracker.png";
 
 const ProjectCardContainer = () => {
   const data = [
