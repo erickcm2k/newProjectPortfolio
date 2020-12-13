@@ -10,8 +10,8 @@ const DrawerMenu = (props) => {
   return (
     <nav className={drawerClasses}>
       <ul className="menu">
-        <li className=" close-menu" onClick={props.toggleButton}>
-        <i class="fas fa-times"></i>
+        <li className="close-menu" onClick={props.toggleButton}>
+          <i className="fas fa-times"></i>
         </li>
         <li className="menu-item">
           <a href="https://www.google.com">Skills</a>

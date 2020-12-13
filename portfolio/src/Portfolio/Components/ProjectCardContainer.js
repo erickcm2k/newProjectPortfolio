@@ -20,7 +20,7 @@ const ProjectCardContainer = () => {
       date: "December 2020",
       description:
         "I depeloved the frontend of this web application where users upload a chest tomography and the app tells you if the patient is COVID19 positive or not.",
-      github: "https://github.com/erickcm2k/covid-19-tracker",
+      github: "https://github.com/erickcm2k/OODesignAndAnalysis",
       url: "https://coronaimage.vercel.app/",
       projectImage: coronAImage,
       technologies: ["React", "HTML", "CSS", "Javascript"],

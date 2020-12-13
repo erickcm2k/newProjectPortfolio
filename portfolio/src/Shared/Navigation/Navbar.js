@@ -83,9 +83,7 @@ class NavBar extends React.Component {
                 <a href="https://www.google.com.mx/">Contact</a>
               </li>
               <li className="Toggle" onClick={() => this.toggleBurgerButton()}>
-                <a href="https://www.google.com.mx/">
-                  <i className="fas fa-bars"></i>
-                </a>
+                <i className="fas fa-bars fa-2x"></i>
               </li>
             </ul>
           </Container>
