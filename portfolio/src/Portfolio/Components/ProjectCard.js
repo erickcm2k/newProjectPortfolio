@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
   return (
     <article className={classes.card}>
       <figure className={classes.projectImageContainer}>
-        <img src={props.projectImage} className={classes.projectImage} />
+        <img src={props.projectImage} alt={props.projectName} className={classes.projectImage} />
       </figure>
       <div className={classes.cardBody}>
         <h2 className={classes.projectName}>{props.projectName}</h2>

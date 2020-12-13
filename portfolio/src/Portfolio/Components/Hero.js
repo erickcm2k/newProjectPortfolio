@@ -33,6 +33,7 @@ const Hero = () => {
 
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1yoauTkuNizFu6aNa8eNiNBMyEU2P1wkr/view?usp=sharing"
             >
               <button className="about-me--button">View my CV</button>
@@ -46,7 +47,11 @@ const Hero = () => {
           <div className="icon-container">
             <ul className="icon-container--list">
               <li>
-                <a href="https://github.com/erickcm2k" target="_blank">
+                <a
+                  href="https://github.com/erickcm2k"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fab fa-github fa-3x px-md-1"></i>
                 </a>
               </li>
@@ -54,12 +59,17 @@ const Hero = () => {
                 <a
                   href="https://www.linkedin.com/in/erickcastanedamartinez/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-linkedin-in fa-3x px-md-1"></i>
                 </a>
               </li>
               <li>
-                <a href="https://telegram.me/erickcm2k" target="_blank">
+                <a
+                  href="https://telegram.me/erickcm2k"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fab fa-telegram fa-3x px-md-1"></i>
                 </a>
               </li>

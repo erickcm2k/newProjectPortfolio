@@ -51,7 +51,6 @@ class NavBar extends React.Component {
   }
 
   render() {
-    let sideDrawer;
     let backdrop;
     if (this.state.responsiveMenu) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
@@ -72,19 +71,19 @@ class NavBar extends React.Component {
               </li>
 
               <li className="Active">
-                <a href="#">Skills</a>
+                <a href="https://www.google.com.mx/">Skills</a>
               </li>
               <li className="Active">
-                <a href="#">Projects</a>
+                <a href="https://www.google.com.mx/">Projects</a>
               </li>
               <li className="Active">
-                <a href="#">Blog</a>
+                <a href="https://www.google.com.mx/">Blog</a>
               </li>
               <li className="Active">
-                <a href="#">Contact</a>
+                <a href="https://www.google.com.mx/">Contact</a>
               </li>
               <li className="Toggle" onClick={() => this.toggleBurgerButton()}>
-                <a href="#">
+                <a href="https://www.google.com.mx/">
                   <i className="fas fa-bars"></i>
                 </a>
               </li>
