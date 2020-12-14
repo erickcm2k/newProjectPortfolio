@@ -1,0 +1,14 @@
+.projectSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .projectSection {
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}

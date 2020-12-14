@@ -1,0 +1,164 @@
+.hero {
+  padding-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+/* Main container for about-me and description */
+
+/* First element */
+.hero-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me {
+  flex: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.orangize {
+  color: #eb550a;
+}
+
+.about-me--name {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.about-me--whatiam {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about-me--button {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  background-color: #30475e;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.about-me--button:hover {
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.picture-container {
+  flex: 50;
+}
+
+.picture {
+  height: 35rem;
+  width: 35rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.3);
+  background-image: url("../../assets/images/me.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -5rem;
+}
+
+/* Second element */
+
+.description {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  padding-top: 1rem;
+  flex: 50;
+  /* border: 1px solid red; */
+}
+
+.icon-container--list {
+  display: flex;
+  flex-direction: row;
+}
+.icon-container i {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0 1rem;
+}
+
+.message {
+  line-height: 2.6rem;
+  padding-top: 1rem;
+  flex: 50;
+  /* border: 1px solid red; */
+  max-width: 50rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.nodeish {
+  font-weight: bold;
+  color: #71a00d;
+}
+
+.reactish {
+  font-weight: bold;
+  color: #106bd6;
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .picture {
+    order: 1;
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .about-me {
+    order: 2;
+  }
+
+  .about-me--name {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+  .about-me--whatiam {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .about-me--button {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .picture {
+    height: 20rem;
+    width: 20rem;
+    background-position-x: center;
+    background-position-y: -2rem;
+  }
+
+  .message {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    margin-bottom: 2.5rem;
+    padding-top: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+}

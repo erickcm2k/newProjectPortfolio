@@ -1,0 +1,75 @@
+.Navbar {
+  width: 100vw;
+  background-color: #eb550a;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  &-hiden {
+    width: 100vw;
+    background-color: #eb550a;
+    position: fixed;
+    top: -10rem;
+    transition: top 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.List {
+  font-family: "Poppins", sans-serif;
+  height: 5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &-Logo {
+    flex-grow: 1;
+  }
+  li {
+    padding: 1.5rem 1rem;
+    color: #f1f1f1;
+    &:hover:not(:nth-child(1)) {
+      text-decoration: underline;
+    }
+    span {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    a {
+      color: #f1f1f1;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.Active {
+  display: block;
+}
+
+.Toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+  .Active {
+    display: none;
+  }
+
+  .List-Logo {
+    order: 2;
+  }
+
+  .Toggle {
+    display: block;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 320px) {
+}
