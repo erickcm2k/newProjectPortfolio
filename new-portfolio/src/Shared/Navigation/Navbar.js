@@ -59,7 +59,6 @@ class NavBar extends React.Component {
       <React.Fragment>
         <nav className={this.state.visible ? "Navbar" : "Navbar-hiden"}>
           <Container>
-            {/* {sideDrawer} */}
             <DrawerMenu
               toggleButton={this.toggleBurgerButton}
               show={this.state.responsiveMenu}
