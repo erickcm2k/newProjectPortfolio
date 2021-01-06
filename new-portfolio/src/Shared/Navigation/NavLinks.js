@@ -13,10 +13,10 @@ const NavLinks = (props) => {
         offset={-50}
         onClick={props.closeDrawer}
       >
-        About Me
+        Contact
       </Link>
 
-      <Link
+      {/* <Link
         className={classes.Link}
         spy={true}
         to="project-section"
@@ -26,7 +26,7 @@ const NavLinks = (props) => {
         onClick={props.closeDrawer}
       >
         Skills
-      </Link>
+      </Link> */}
       <Link
         className={classes.Link}
         spy={true}
@@ -39,7 +39,7 @@ const NavLinks = (props) => {
         Projects
       </Link>
 
-      <Link
+      {/* <Link
         className={classes.Link}
         spy={true}
         to="project-section"
@@ -60,7 +60,7 @@ const NavLinks = (props) => {
         onClick={props.closeDrawer}
       >
         Contact
-      </Link>
+      </Link> */}
     </>
   );
 };

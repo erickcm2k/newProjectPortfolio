@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
 
 import NavLinks from "./NavLinks";
 import Container from "../Container/Container";
@@ -7,15 +6,15 @@ import DrawerMenu from "./DrawerMenu";
 import Backdrop from "./Backdrop";
 
 import useWindowSize from "../../Hooks/useWindowSize";
-import usePageOffset from "../../Hooks/usePageOffset";
-import usePreviousOffset from "../../Hooks/usePreviousOffset";
+// import usePageOffset from "../../Hooks/usePageOffset";
+// import usePreviousOffset from "../../Hooks/usePreviousOffset";
 
 import "./Navbar.scss";
 
 const NavBarFunc = () => {
   const windowSize = useWindowSize();
-  const offSet = usePageOffset();
-  const previous = usePreviousOffset(offSet);
+  // const offSet = usePageOffset();
+  // const previous = usePreviousOffset(offSet);
 
   const [drawerMenuVisible, setDrawerMenuVisible] = useState(false);
 
@@ -25,17 +24,17 @@ const NavBarFunc = () => {
 
   const closeDrawer = () => setDrawerMenuVisible(false);
 
-  const handleScrollUpdates = () => {
-    if (windowSize.width <= 768) {
-      return true;
-    }
-    let visible = true;
-    if (offSet.y > 0) {
-      visible = previous.y >= offSet.y;
-    }
+  // const handleScrollUpdates = () => {
+  //   if (windowSize.width <= 768) {
+  //     return true;
+  //   }
+  //   let visible = true;
+  //   if (offSet.y > 0) {
+  //     visible = previous.y >= offSet.y;
+  //   }
 
-    return visible;
-  };
+  //   return visible;
+  // };
 
   return (
     <>
