@@ -1,0 +1,20 @@
+.Link {
+  font-family: "Poppins", sans-serif;
+  padding: 1.5rem 1rem;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  &:hover:not(:nth-child(1)) {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Link {
+    color: black;
+    font-size: 1.7rem;
+    &hover {
+      text-decoration: none;
+    }
+  }
+}

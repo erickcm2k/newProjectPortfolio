@@ -1,17 +1,17 @@
 import React from "react";
 import Hero from "./Portfolio/Components/Hero";
-import NavbarFunc from "./Shared/Navigation/NavbarFunc";
-// import Navbar from "./Shared/Navigation/Navbar";
+import Navbar from "./Shared/Navigation/Navbar";
 import ProjectSection from "./Portfolio/Components/ProjectSection";
+import BackToTop from "./Shared/BackToTop";
 import "./reset.css";
 class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/* <Navbar /> */}
-        <NavbarFunc />
+        <Navbar />
         <Hero />
         <ProjectSection />
+        <BackToTop />
       </React.Fragment>
     );
   }

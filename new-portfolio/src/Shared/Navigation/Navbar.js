@@ -1,95 +1,67 @@
-import React from "react";
-import Container from "../../Shared/Container/Container";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+
+import NavLinks from "./NavLinks";
+import Container from "../Container/Container";
 import DrawerMenu from "./DrawerMenu";
 import Backdrop from "./Backdrop";
 
+import useWindowSize from "../../Hooks/useWindowSize";
+import usePageOffset from "../../Hooks/usePageOffset";
+import usePreviousOffset from "../../Hooks/usePreviousOffset";
+
 import "./Navbar.scss";
 
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
+const NavBarFunc = () => {
+  const windowSize = useWindowSize();
+  const offSet = usePageOffset();
+  const previous = usePreviousOffset(offSet);
 
-    this.state = {
-      prevScrollpos: window.pageYOffset,
-      visible: true,
-      responsiveMenu: false,
-    };
-  }
+  const [drawerMenuVisible, setDrawerMenuVisible] = useState(false);
 
-  // Code for handling scrollbar movements
-  handleScroll = () => {
-    const { prevScrollpos } = this.state;
-    const currentScrollPos = window.pageYOffset;
+  const backdropClickHandler = () => {
+    setDrawerMenuVisible(!drawerMenuVisible);
+  };
+
+  const closeDrawer = () => setDrawerMenuVisible(false);
+
+  const handleScrollUpdates = () => {
+    if (windowSize.width <= 768) {
+      return true;
+    }
     let visible = true;
-    // Prevents problems with iOS overscroll
-    if (currentScrollPos > 0) {
-      visible = prevScrollpos > currentScrollPos;
+    if (offSet.y > 0) {
+      visible = previous.y >= offSet.y;
     }
 
-    this.setState({
-      prevScrollpos: currentScrollPos,
-      visible,
-    });
+    return visible;
   };
 
-  toggleBurgerButton = () => {
-    this.setState({
-      responsiveMenu: !this.state.responsiveMenu,
-    });
-  };
+  return (
+    <>
+      {/* <nav className={handleScrollUpdates() ? "Navbar" : "Navbar-hiden"}> */}
+      <nav className={"Navbar"}>
+        <Container>
+          <DrawerMenu
+            closeDrawer={closeDrawer}
+            closeButtonAction={backdropClickHandler}
+            show={drawerMenuVisible}
+          />
+          {drawerMenuVisible && <Backdrop click={backdropClickHandler} />}
+          <ul className="List">
+            <li className="List-Logo">
+              <span>Erick Castañeda</span>
+            </li>
+            {windowSize.width > 768 && <NavLinks />}
 
-  backdropClickHandler = () => {
-    this.setState({ responsiveMenu: false });
-  };
+            <li className="Toggle" onClick={backdropClickHandler}>
+              <i className="fas fa-bars fa-2x"></i>
+            </li>
+          </ul>
+        </Container>
+      </nav>
+    </>
+  );
+};
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  render() {
-    let backdrop;
-    if (this.state.responsiveMenu) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />;
-    }
-    return (
-      <React.Fragment>
-        <nav className={this.state.visible ? "Navbar" : "Navbar-hiden"}>
-          <Container>
-            <DrawerMenu
-              toggleButton={this.toggleBurgerButton}
-              show={this.state.responsiveMenu}
-            />
-            {backdrop}
-            <ul className="List">
-              <li className="List-Logo">
-                <span>Erick Castañeda</span>
-              </li>
-
-              <li className="Active">
-                <a href="https://www.google.com.mx/">Skills</a>
-              </li>
-              <li className="Active">
-                <a href="https://www.google.com.mx/">Projects</a>
-              </li>
-              <li className="Active">
-                <a href="https://www.google.com.mx/">Blog</a>
-              </li>
-              <li className="Active">
-                <a href="https://www.google.com.mx/">Contact</a>
-              </li>
-              <li className="Toggle" onClick={() => this.toggleBurgerButton()}>
-                <i className="fas fa-bars fa-2x"></i>
-              </li>
-            </ul>
-          </Container>
-        </nav>
-      </React.Fragment>
-    );
-  }
-}
-
-export default NavBar;
+export default NavBarFunc;
